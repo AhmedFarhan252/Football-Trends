@@ -1,0 +1,51 @@
+The dataset has been divided into 5 pickle files. These are: 
+1. International_Results.pkl : This contains all of the competitions. 
+2. Major_International_Results.pkl : This contains only the following competitions: FIFA World Cup, FIFA World Cup    `  `  `  `  `                                    qualification, Friendly, UEFA Euro, Copa América, African Cup of Nations.
+3. FIFA_International_Results.pkl : This contains the following competitions: FIFA World Cup, FIFA World Cup qualification.
+4. Penalty_Results.pkl : This contains the records of the penalty shootouts. 
+5. World Cup Results.pkl : This contains the results of the world cup from 1930 - 2014. It shows the winner, Runner-up, Third `  `                          and Fourth placed team. 
+
+
+Here are our questions and the dataset to be used with them :
+
+Q1. Does home advantage play a role in a team's performance?
+Dataset : Pick one of "International_Results.pkl" or "Major_International_Results.pkl"
+
+Q2. What are the trends of the top performing Countries over the years?
+Dataset: FIFA_International_Results.pkl 
+
+
+Q3. Which Countries are the most consistent at the highest levels?
+Dataset: World Cup Results.pkl
+
+
+Q4. What days, months, and seasons are the most popular for International Matches
+Dataset: Major_International_Results.pkl
+
+
+Q5. What are the trends in goals scored at home vs goals scored away?
+Dataset: Same as Q1. 
+Note: For goals scored at home, you have to make sure that neutral = True. Otherwise , there is no home advantage since home team and away team is randomly decided on a neutral location.
+
+
+Q6. Which Countries are the most attacking or most defensive?
+Dataset: Major_International_Results.pkl
+
+
+Q7. What are the trends of top performing countries over the years?
+Dataset: FIFA_International_Results.pkl
+
+
+Q8. Are Germans the best penalty takers?
+Dataset: Penalty_Results.pkl
+
+
+Choose one of the following to perform EDA on: 
+a) Q1 + Q5
+b) Q2 + Q3
+c) Q4
+d) Q6 + Q7
+
+
+For unpickling a file into dataframe:
+tmp = pd.read_pickle('International_Results.pkl')
